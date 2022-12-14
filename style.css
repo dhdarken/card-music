@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/pattern-background-mobile.svg) no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  width: 280px;
+  flex-direction: column;
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.imag-music {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cont-title {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.mid {
+  color: hsl(224, 23%, 55%);
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cont-title2 {
+  width: 230px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(225, 29%, 95%);
+  border-radius: 10px;
+}
+.icon {
+  padding-left: 10px;
+}
+
+button {
+  height: 50px;
+  width: 230px;
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.btn2 {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: hsl(225, 100%, 98%);
+}
+.numb {
+  color: hsl(224, 23%, 55%);
+  padding-left: 20px;
+}
+.text {
+  color: hsl(223, 47%, 23%);
+  font-size: 15px;
+  font-weight: 800;
+}
+.link {
+  color: hsl(245, 75%, 52%);
+  font-size: 15px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+@media (min-width: 550px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  .container {
+    width: 400px;
+  }
+  .cont-title {
+    width: 400px;
+    padding: 20px;
+  }
+  .cont-title2 {
+    height: 100px;
+    width: 320px;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+  }
+
+  .mid {
+    font-size: 15px;
+    padding: 30px;
+  }
+
+  button {
+    width: 320px;
+    height: 50px;
+  }
+
+  .numb {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .link {
+    padding: 0;
+  }
+}
